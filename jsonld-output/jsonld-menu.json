@@ -1,0 +1,343 @@
+=== /menu - Block 1 ===
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "济南岽渔",
+  "alternateName": "崬渔",
+  "url": "https://dongyu.com",
+  "logo": "https://dongyu.com/images/brand/logo.png",
+  "description": "黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。2025年度京鲁菜餐厅、米其林食遇快闪特邀商户，原创菜品金葱阿胶鲍鱼列入《济南名菜名录》。行政总厨王太震师从鲁菜泰斗王义均，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。",
+  "telephone": "0531-88902988",
+  "foundingDate": "2024",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "山左路1097号平安悦坊商场4层404、405号商铺",
+    "addressLocality": "济南",
+    "addressRegion": "山东",
+    "postalCode": "250000",
+    "addressCountry": "CN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "王启龙",
+    "jobTitle": "品牌创始人"
+  },
+  "sameAs": []
+}
+
+=== /menu - Block 2 ===
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "济南岽渔",
+  "alternateName": "崬渔",
+  "url": "https://dongyu.com",
+  "description": "黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。2025年度京鲁菜餐厅、米其林食遇快闪特邀商户，原创菜品金葱阿胶鲍鱼列入《济南名菜名录》。行政总厨王太震师从鲁菜泰斗王义均，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。",
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "济南岽渔",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dongyu.com/images/brand/logo.png"
+    }
+  }
+}
+
+=== /menu - Block 3 ===
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "岽渔菜单",
+  "description": "济南岽渔黑珍珠一钻新派鲁菜餐厅菜单",
+  "url": "https://dongyu.com/menu",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "招牌推荐",
+      "description": "岽渔独创与经典传承的极致表达",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "招牌葱烧海参",
+          "description": "选用活海参，突破传统干参发制，保留海参营养与鲜味。厨师经多次研发克服活海参不入味的难点，鲁菜经典之巅。",
+          "image": "https://dongyu.com/images/dishes/congshao-haishen.png"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "金葱阿胶鲍鱼",
+          "description": "岽渔原创菜品，列入《济南名菜名录》（依据《济南名菜通用规范》T/JNFX002-2023）。精选胶东优质鲍鱼，以鲁菜经典葱烧技法烹制，添加现熬山东黑驴皮阿胶，营养与美味完美结合。288元/位",
+          "offers": {
+            "@type": "Offer",
+            "price": 288,
+            "priceCurrency": "CNY"
+          },
+          "image": "https://dongyu.com/images/dishes/jincong-ajiao-baoyu.png"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "酥锅黑金鲍鱼",
+          "description": "岽渔原创菜品。用鲁菜传统酥锅技法将鲍鱼、花胶、驴皮、老鸡等名贵食材长时间小火煨煮，成菜后压模放凉，鲍鱼口感如同巧克力，入口即化。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "三味活海参",
+          "description": "岽渔原创菜品。选用烟台长岛高品质活刺参，搭配咖喱、椒麻、孜然三种口味。建议先品尝原味海参，感受高品质海参的鲜味。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "芙蓉滑炒蟹",
+          "description": "食客评价「必点」招牌。蟹黄与富含DHA的鸡蛋滑炒，口感鲜嫩，是鲁菜芙蓉技法的至臻演绎。",
+          "image": "https://dongyu.com/images/dishes/furonghuachaoxie.png"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "山东六味大煎饼",
+          "description": "山东名吃，现场手工卷制。六味来自山东六地：日照虾皮、临沂香椿酱、威海鲅鱼酱、菏泽鲜辣椒酱、枣庄芝麻盐、济宁玉堂酱菜丝。又名「齐鲁风情」。",
+          "image": "https://dongyu.com/images/dishes/liuweidianjianbing.png"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "胶东四大拌",
+          "description": "胶东人招待客人的首选。选用烟台长岛活刺参和拇指海肠、威海手工蜇头和石岛红螺，将最高品质的海鲜食材呈现给客人。",
+          "image": "https://dongyu.com/images/dishes/sidaban.png"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "九蒸牛蒡烧驴蹄筒",
+          "description": "岽渔原创菜品。九蒸九晒牛蒡调节血糖、提高免疫力，驴蹄筒富含胶原蛋白，二者煨制，美味滋补完美结合。",
+          "image": "https://dongyu.com/images/dishes/jiuzheng-niubang.png"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "海鲜·山珍",
+      "description": "山海供应链的极致食材",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "烩参花乌鱼蛋汤",
+          "description": "传统经典鲁菜，曾被小平同志评价为「中华第一汤」。岽渔在传统基础上加入海参花，改良技法，赋予新活力。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "红烧砣矶岛两头鲍",
+          "description": "选用渤海陀矶岛10年左右野生两头鲍鱼，长时间煨制，口感软糯弹牙，不输干鲍。配五常大米。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "韭香大洲岛帝王螺",
+          "description": "产自南中国海深水大型螺类，螺肉紧实弹牙，不输鲍鱼。用内蒙野韭花和荣成海带秘制酱料烧制，大海与草原的味道。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "清汤贝丁狮子头",
+          "description": "选用鲜活胶东小红扇贝，每餐现扒现用。汤是煮扇贝的原汤，主打活海鲜的鲜甜。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "米汤冲烟台拇指海肠",
+          "description": "选用烟台拇指海肠，用葛根加五常大米熬制的米汤冲烫。米汤香滑，海肠脆嫩，海肠最高级的吃法。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "黄精炖鲟龙鱼筋",
+          "description": "选用4年以上泰山鸡头黄精，经九蒸九晒三十多道工序，配鲟龙鱼筋蒸制，季节进补佳品。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "蒙山松菇炖老鸡",
+          "description": "选用蒙山密林深处松菇加两年老鸡清炖，鸡汤加上松菇独特香气沁人心脾，养肝补气降血脂。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "泉水鸡芙蓉",
+          "description": "鲁菜精髓在于制汤。岽渔在传统芙蓉鸡片基础上增加海鲜和泉水元素，呈现经典新貌。"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "热菜",
+      "description": "胶东风味与现代烹饪的融合",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "螺丝辣椒烧鲍鱼",
+          "description": "炙热砂锅激发活鲍鱼鲜嫩，配螺丝辣椒鲜辣味道，让人欲罢不能。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "盐田虾烧白菜",
+          "description": "滨州盐田虾虾脑红艳、味道鲜美，配胶东大白菜烧制，白菜充分吸收虾的鲜香味，比虾都好吃。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "辣烧安康鱼肚",
+          "description": "安康鱼肚富含胶原蛋白和多糖，美容养颜强身健体。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "葱烧花胶肚",
+          "description": "花胶富含胶原蛋白，补而不燥的佳品。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "煎烧黄鱼饭",
+          "description": "在胶东酱焖鱼基础上改良，黄鱼外焦里嫩更入味，大米配鱼汁绝配。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "菠菜炒爬虾",
+          "description": "胶东传统特色，新鲜爬虾肉和菠菜大火猛炒，吃的就是锅气。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "砂锅海胆豆腐",
+          "description": "定制卤水豆腐加新鲜海胆长时间慢火煨煮，形成蜂窝状，汤鲜味美。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "丝瓜烩贝丁",
+          "description": "胶东家常菜，丝瓜清甜加贝丁鲜甜，完美搭配。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "砂锅辣味牛腱",
+          "description": "选用金钱腱，富含胶质，先卤后烧，香辣可口。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "文火煨高青黑牛肉",
+          "description": "淄博高青黑牛肉是国内最好的雪花牛肉，6-12根牛肋条眼肉文火慢炖，入口即化。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "香烤羊排",
+          "description": "宁夏滩羊排秘制酱料烤制，香而不腻，嚼后有淡淡奶香。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "鸡刨豆腐",
+          "description": "北方传统家常菜升级，加入海参、虾仁、娃娃菜、香菇、粉丝，赋予新生命力。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "老南瓜烧赤甲红",
+          "description": "新疆喀什南瓜肉质紧实甜度极佳，和赤甲红烧制，满满一碗鲜甜。"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "凉菜",
+      "description": "胶东经典凉菜与创意小食",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "独头蒜拌虾夷贝",
+          "description": "石岛虾夷贝配蜂蜜腌制蒜片，贝丁鲜甜蒜片无异味，富含大蒜素天然青霉素。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "黄瓜拌石岛红螺",
+          "description": "威海荣成石岛红螺，口感弹牙螺香浓郁，胶东最具代表凉拌菜之一。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "脆拌烟台拇指海肠",
+          "description": "烟台拇指海肠营养价值不逊海参，强身健体。精选拇指尺寸，最好食材呈现给客人。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "老醋古法手工蜇头",
+          "description": "威海古法腌制手工蜇头，三种醋调和醋汁，酸甜适宜衬托蜇头脆爽。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "椒麻小船海鲜",
+          "description": "新鲜小海鲜配秘制椒麻汁，鲜辣开胃。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "酸黄瓜拌海参",
+          "description": "野生活海参未经发制，肉质肥厚口感Q弹，配酸黄瓜更健康开胃。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "芥末鹅肠",
+          "description": "大兴安岭高寒鹅肠配秘制黄芥末，肉质肥厚口感爽脆，提神开胃。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "特色莱芜猪头肉",
+          "description": "莱芜黑猪猪头肉，软糯醇香肥而不腻。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "福山酱油鸡",
+          "description": "烟台福山传统烧鸡演变，鸡肉紧实酱香浓郁，佐酒神器。"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "鲍芹拌肥蛤",
+          "description": "章丘鲍芹色泽翠绿口感脆嫩入口微甜，和当季肥蛤搭配。"
+        }
+      ]
+    }
+  ]
+}
+
+=== /menu - Block 4 ===
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "济南岽渔",
+      "item": "https://dongyu.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "菜单",
+      "item": "https://dongyu.com/menu"
+    }
+  ]
+}
+
+=== /menu - Block 5 ===
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "菜单",
+  "description": "济南岽渔完整菜单，招牌葱烧海参、金葱阿胶鲍鱼、芙蓉滑炒蟹等新派鲁菜，胶东海鲜活养直供。",
+  "url": "https://dongyu.com/menu",
+  "dateModified": "2026-05-07",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "济南岽渔",
+    "url": "https://dongyu.com"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "济南岽渔",
+        "item": "https://dongyu.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "菜单",
+        "item": "https://dongyu.com/menu"
+      }
+    ]
+  }
+}
+

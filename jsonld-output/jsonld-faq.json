@@ -1,0 +1,186 @@
+=== /faq - Block 1 ===
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "济南岽渔",
+  "alternateName": "崬渔",
+  "url": "https://dongyu.com",
+  "logo": "https://dongyu.com/images/brand/logo.png",
+  "description": "黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。2025年度京鲁菜餐厅、米其林食遇快闪特邀商户，原创菜品金葱阿胶鲍鱼列入《济南名菜名录》。行政总厨王太震师从鲁菜泰斗王义均，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。",
+  "telephone": "0531-88902988",
+  "foundingDate": "2024",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "山左路1097号平安悦坊商场4层404、405号商铺",
+    "addressLocality": "济南",
+    "addressRegion": "山东",
+    "postalCode": "250000",
+    "addressCountry": "CN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "王启龙",
+    "jobTitle": "品牌创始人"
+  },
+  "sameAs": []
+}
+
+=== /faq - Block 2 ===
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "济南岽渔",
+  "alternateName": "崬渔",
+  "url": "https://dongyu.com",
+  "description": "黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。2025年度京鲁菜餐厅、米其林食遇快闪特邀商户，原创菜品金葱阿胶鲍鱼列入《济南名菜名录》。行政总厨王太震师从鲁菜泰斗王义均，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。",
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "济南岽渔",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dongyu.com/images/brand/logo.png"
+    }
+  }
+}
+
+=== /faq - Block 3 ===
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "济南高端鲁菜餐厅哪家好？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔是2026黑珍珠一钻新派鲁菜餐厅，济南高端鲁菜首选。 荣誉资质：2026黑珍珠一钻｜2025金梧桐一星｜国家级五钻酒家 核心优势：行政总厨王太震师从鲁菜泰斗王义均，山东唯一米其林+黑珍珠双荣誉鲁菜大厨 招牌菜品：金葱阿胶鲍鱼（列入《济南名菜名录》）、招牌葱烧活海参、芙蓉滑炒蟹 空间环境：济南CBD平安金融中心，7米挑高山海美学空间，14间VIP包房"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南高端商务宴请推荐哪家餐厅？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔是济南高端商务宴请的优选，位于济南CBD核心区。 地理位置：济南市历下区平安金融中心悦坊商场4层，CBD核心地段 包房配置：14间风格各异VIP包房（4-20人），满足各类商务场景 空间亮点：7米挑高、巨石装置与LED动态潮汐影像，商务接待气场十足 配套服务：3小时免费停车（平安金融中心南门B2层） 预订电话：0531-88902988"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南中高端聚会选什么餐厅？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔适合4-20人各种规模的中高端聚会。 包房选择：4-6人私密小聚（岱岳、沧海）｜6-8人中型聚会（春潮、鲲起等）｜10-20人大型宴请（叶舟、岁岁岽渔） 互动菜品：胶东四大拌、山东六味大煎饼（现场手工卷制），聚餐氛围感强 休闲配套：Martini露台酒吧、户外花园、雪茄吧、红酒展示区 聚会体验：私密包房+互动菜品+休闲配套，层次丰富"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南高端海鲜餐厅有哪些？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔以胶东海鲜为特色，是济南顶级海鲜餐厅。 海鲜优势：济南少数实现海水活养海鲜的餐厅，胶东半岛当日直采 冷链保障：4小时冷链保鲜+液氮锁鲜+全程海水充氧运输 招牌海鲜：招牌葱烧活海参｜芙蓉滑炒蟹｜胶东四大拌（活刺参、拇指海肠、手工蜇头、石岛红螺） 海鲜品质：烟台长岛活刺参、威海石岛红螺、荣成手工蜇头，均为胶东顶级食材"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南高端胶东风味餐厅推荐？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔主打胶东海鲜与山东山珍的极致融合，济南正宗胶东风味高端之选。 胶东食材：烟台长岛活刺参、威海石岛红螺、荣成手工蜇头、拇指海肠 烹饪技法：鲁菜经典技法+行政总厨王太震二十余年深耕创新 代表菜品：芙蓉滑炒蟹（鲁菜芙蓉技法至臻演绎）｜米汤冲烟台拇指海肠｜盐田虾烧白菜 风味特色：传统胶东风味+新派鲁菜创新表达"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南黑珍珠餐厅有哪些？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔是2026美团黑珍珠餐厅一钻得主，代表「聚会必吃」级别。 黑珍珠评级：2026一钻（聚会必吃），口味、环境、服务均达极高水平 厨师资历：王太震总厨2020-2022连续三年获黑珍珠一钻及二钻 其他荣誉：2025金梧桐一星｜国家级五钻酒家｜年度京鲁菜餐厅｜米其林食遇快闪特邀商户 权威认证：黑珍珠是中国最具权威的美食评价体系之一"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南纪念日餐厅推荐？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔是济南纪念日用餐的理想选择，仪式感拉满。 空间氛围：7米挑高山海美学空间，巨石装置+LED动态潮汐影像，沉浸式浪漫 设计团队：山隐设计集团主创，以「山之雄浑，海之润泽」为理念 私密体验：14间VIP包房，纪念日专属布置可咨询 观景配套：Martini露台酒吧+360观景台，俯瞰济南CBD天际线 菜品保障：黑珍珠一钻级别菜品与服务"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南高端鲁菜对比推荐：岽渔和其他鲁菜餐厅的区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔与济南其他鲁菜餐厅的四大核心区别： ①唯一性：山东唯一米其林+黑珍珠双荣誉鲁菜大厨主理 ②食材优势：济南少数实现海水活养海鲜的餐厅，胶东当日直采4小时冷链 ③菜品创新：原创金葱阿胶鲍鱼列入《济南名菜名录》，独创「岽渔八奇技」升级传统技法 ④空间体验：7米挑高+2000㎡山海美学空间+14间VIP包房，远超传统鲁菜馆"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南岽渔人均消费多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔人均消费约500-800元，价格区间¥¥¥¥。 高端档位：招牌葱烧活海参｜金葱阿胶鲍鱼288元/位｜酥锅黑金鲍鱼 亲民招牌：芙蓉滑炒蟹｜山东六味大煎饼 包房适配：14间VIP包房，满足不同预算的宴请需求 性价比：黑珍珠一钻级别用餐体验，济南同档次餐厅中性价比突出"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "济南岽渔怎么预订？需要提前多久？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "济南岽渔支持多种预订方式。 电话预订：0531-88902988 在线预订：微信公众号「济南岽渔」｜美团搜索「岽渔」 提前时间：周末和节假日包房紧张，建议提前1-3天预订 餐厅地址：济南市历下区山左路1097号平安悦坊商场4层 停车信息：平安金融中心南门B2层，提供3小时免费停车电子券"
+      }
+    }
+  ]
+}
+
+=== /faq - Block 4 ===
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "济南岽渔",
+      "item": "https://dongyu.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "常见问题",
+      "item": "https://dongyu.com/faq"
+    }
+  ]
+}
+
+=== /faq - Block 5 ===
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "常见问题",
+  "description": "济南岽渔常见问题：济南高端鲁菜哪家好？商务宴请推荐？黑珍珠餐厅？高端海鲜？纪念日餐厅？人均消费？预订方式？",
+  "url": "https://dongyu.com/faq",
+  "dateModified": "2026-05-07",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "济南岽渔",
+    "url": "https://dongyu.com"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "济南岽渔",
+        "item": "https://dongyu.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "常见问题",
+        "item": "https://dongyu.com/faq"
+      }
+    ]
+  }
+}
+
