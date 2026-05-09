@@ -71,8 +71,8 @@ export default function RootLayout({
             <a href="/" className="flex items-center gap-3 group">
               <img
                 src="/images/brand/logo.png"
-                alt={`${RESTAURANT.name} Logo`}
-                className="h-10 w-auto transition-opacity group-hover:opacity-80"
+                alt={`${RESTAURANT.name}黑珍珠一钻新派鲁菜餐厅Logo`}
+                className="h-7 w-auto transition-opacity group-hover:opacity-80"
               />
             </a>
             <ul className="hidden md:flex items-center gap-8">
@@ -123,8 +123,8 @@ export default function RootLayout({
             <div className="flex flex-col items-start">
               <img
                 src="/images/brand/logo.png"
-                alt={`${RESTAURANT.name} Logo`}
-                className="h-8 w-auto mb-4"
+                alt={`${RESTAURANT.name}黑珍珠一钻新派鲁菜餐厅Logo`}
+                className="h-5 w-auto mb-4"
               />
               <p className="text-text-muted text-sm">
                 {RESTAURANT.awards.map((a) => a.title).join(" · ")}
@@ -150,15 +150,15 @@ export default function RootLayout({
                 </address>
               </div>
               <div>
-                <h3 className="text-accent font-serif text-lg mb-4">在线预订</h3>
+                <h3 className="text-accent font-serif text-lg mb-4">电话预订</h3>
                 <p className="text-text-muted text-sm">
-                  电话预订或关注公众号「济南岽渔」
+                  请拨打预订电话，安排您的用餐座位
                 </p>
                 <a
                   href={`tel:${RESTAURANT.phone}`}
                   className="inline-block mt-4 px-6 py-2 border border-accent text-accent text-sm hover:bg-accent hover:text-primary transition-colors"
                 >
-                  立即预订
+                  电话预订 {RESTAURANT.phone}
                 </a>
               </div>
             </div>

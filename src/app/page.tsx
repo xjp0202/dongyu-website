@@ -40,7 +40,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <img
             src="/images/brand/beijing.png"
-            alt="岽渔餐厅空间"
+            alt="济南岽渔黑珍珠一钻新派鲁菜餐厅山海意境空间"
             className="w-full h-full object-cover"
           />
           <div className="hero-overlay absolute inset-0" />
@@ -62,9 +62,12 @@ export default function HomePage() {
               </span>
             ))}
           </div>
-          <p className="text-text-muted text-sm md:text-base leading-loose max-w-xl mx-auto">
-            黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。<br />
-            <span className="whitespace-nowrap">行政总厨王太震师从鲁菜泰斗王义均，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。</span>
+          <p className="text-center text-text-muted text-sm md:text-base leading-loose max-w-2xl mx-auto">
+            黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。
+          </p>
+          <p className="text-center text-text-muted text-sm md:text-base leading-loose max-w-2xl mx-auto mt-1">
+            行政总厨王太震传承于鲁菜烹饪一代宗师王义均老先生一脉，<br />
+            是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。
           </p>
           <div className="mt-10 flex items-center justify-center gap-4">
             <a
@@ -77,7 +80,7 @@ export default function HomePage() {
               href="/contact"
               className="px-8 py-3 border border-accent text-accent text-sm hover:bg-accent hover:text-primary transition-colors tracking-widest"
             >
-              立即预订
+              电话预订
             </a>
           </div>
         </div>
@@ -140,7 +143,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-lg mb-3">守根创味</h3>
               <p className="text-text-muted text-sm leading-relaxed">
-                主厨王太震师从鲁菜泰斗王义均，守鲁菜之根、创时代之味。将12种山东非遗元素融入菜品，让传统焕发新生。
+                主厨王太震传承于鲁菜烹饪一代宗师王义均老先生一脉，守鲁菜之根、创时代之味。将12种山东非遗元素融入菜品，让传统焕发新生。
               </p>
             </article>
           </div>
@@ -166,7 +169,7 @@ export default function HomePage() {
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={dish.image}
-                      alt={dish.name}
+                      alt={`${dish.name} — 济南岽渔黑珍珠一钻新派鲁菜招牌菜`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       itemProp="image"
