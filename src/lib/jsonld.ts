@@ -44,8 +44,8 @@ export function generateRestaurantJsonLd() {
     })),
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "326",
+      ratingValue: "4.9",
+      reviewCount: "1108",
       bestRating: "5",
     },
     starRating: {
@@ -134,17 +134,17 @@ export function generateReviewsJsonLd() {
     url: SITE_URL,
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "326",
+      ratingValue: "4.9",
+      reviewCount: "1108",
       bestRating: "5",
     },
     review: [
       {
         "@type": "Review",
-        author: { "@type": "Person", name: "美食爱好者" },
-        datePublished: "2025-12-15",
+        author: { "@type": "Person", name: "匿名用户" },
+        datePublished: "2026-04-18",
         reviewBody:
-          "黑珍珠一钻实至名归，活海参的口感完全颠覆认知，芙蓉滑炒蟹必点！环境山海意境，7米挑高太震撼了。",
+          "结婚纪念日选在了崬渔，果然没有让人失望。几乎没有踩雷的菜品，每道菜的出品水准都相当高，不愧是黑珍珠。特别幸运吃到了黄鱼饭，口味比肩新荣记，价格却很亲民，性价比超高！服务贴心周到又有分寸，客人感冒了还会给提供姜汤和雪梨。第一次做客崬渔就被狠狠圈粉了。",
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
@@ -153,10 +153,10 @@ export function generateReviewsJsonLd() {
       },
       {
         "@type": "Review",
-        author: { "@type": "Person", name: "鲁菜达人" },
-        datePublished: "2025-11-20",
+        author: { "@type": "Person", name: "匿名用户" },
+        datePublished: "2026-04-17",
         reviewBody:
-          "在济南CBD能吃到这样的鲁菜，非常惊喜。阿胶鲍鱼的创新做法让人印象深刻，包间服务也很细致。六味大煎饼仪式感十足。",
+          "老派鲁菜给人的印象是「黑糊儿、黏糊儿和咸糊儿」，再看看崬渔做的这现代派鲁菜，吸收了老派鲁菜的精华，又将鲁菜做得如此精致细腻。金葱阿胶鲍鱼包裹鲍鱼的这层胶质酱汁做得好绝，明明是鲜鲍，却跟干鲍如出一辙。整体食材优中选优，是去了一次会想两次的餐厅。",
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
@@ -165,10 +165,10 @@ export function generateReviewsJsonLd() {
       },
       {
         "@type": "Review",
-        author: { "@type": "Person", name: "商务宴请常客" },
-        datePublished: "2025-10-08",
+        author: { "@type": "Person", name: "大脸小" },
+        datePublished: "2026-03-20",
         reviewBody:
-          "环境大气，山海意境的空间设计很适合商务接待。菜品精致，客户都非常满意。停车方便，3小时免费。",
+          "刷到岽渔开业一年就黑珍珠了特地来品尝。位置就在CBD，灯光柔和氛围感拉满。螺丝椒鲍鱼特别入味，烧杂鱼就是鲁菜的咸鲜本味，烤羊排特别软糯。服务细致还会讲解菜品典故，主厨还过来询问对菜品的意见，宴请小聚都超合适。",
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
@@ -177,10 +177,10 @@ export function generateReviewsJsonLd() {
       },
       {
         "@type": "Review",
-        author: { "@type": "Person", name: "海鲜控" },
-        datePublished: "2025-09-12",
+        author: { "@type": "Person", name: "阿咩CH3CH2OH" },
+        datePublished: "2026-04-29",
         reviewBody:
-          "胶东四大拌绝了，活海参和拇指海肠的品质明显比其他店高出一个档次。听说他们家能海水活养海鲜，难怪这么鲜甜。",
+          "问本地吃货朋友只吃一顿本地菜吃什么，他们强推了这家。砂锅辣味牛腱好Q弹，莲子烩莱芜黑猪肚莲子选得太好了非常鲜甜，葱烧花胶肚Q糯鲜甜。糖水玫瑰山楂太太太清爽了！",
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
@@ -189,13 +189,13 @@ export function generateReviewsJsonLd() {
       },
       {
         "@type": "Review",
-        author: { "@type": "Person", name: "济南土著" },
-        datePublished: "2025-08-25",
+        author: { "@type": "Person", name: "ywywy" },
+        datePublished: "2026-04-06",
         reviewBody:
-          "作为济南人，终于有一家能代表鲁菜水准的黑珍珠了。九蒸牛蒡烧驴蹄筒很特别，砂锅海胆豆腐暖胃。期待更多创新。",
+          "特意预约了黑珍珠餐厅，美团488双人餐非常值。煎饼卷大葱的调味丰富，煎饼皮能吃到麦香。凉拌芹菜非常惊艳，先腌制后凉拌配上海鲜足够清爽！葱烧帝王螺吃起来是螺的软糯及葱的清香。一餐下来实在满足，下回去山东还会选择。",
         reviewRating: {
           "@type": "Rating",
-          ratingValue: "4",
+          ratingValue: "5",
           bestRating: "5",
         },
       },

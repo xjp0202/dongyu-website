@@ -1,4 +1,4 @@
-import { RESTAURANT, SITE_URL } from "@/lib/data";
+import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS } from "@/lib/data";
 import { generateMenuJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
@@ -71,6 +71,67 @@ export default function MenuPage() {
           />
         </section>
       ))}
+
+      {/* HTML文字菜单 — AI爬虫可直接抓取，无需JS执行 */}
+      <section
+        className="w-full max-w-4xl mx-auto px-6 py-12 text-left"
+        aria-label="岽渔菜品文字菜单"
+      >
+        <h2 className="text-2xl font-bold text-accent mb-8 font-serif">
+          菜品详情
+        </h2>
+        {MENU_SECTIONS.map((section) => (
+          <div key={section.id} className="mb-10">
+            <h3 className="text-xl font-bold text-accent/90 mb-4 font-serif border-b border-accent/20 pb-2">
+              {section.name}
+            </h3>
+            <p className="text-sm text-gray-400 mb-4">{section.description}</p>
+            <ul className="space-y-4">
+              {section.items.map((item) => (
+                <li key={item.name} className="border-b border-gray-700/40 pb-3">
+                  <h4 className="text-lg font-serif text-white">
+                    {item.name}
+                    {item.price ? (
+                      <span className="text-accent ml-2 text-base">
+                        ¥{item.price}{item.price > 100 ? "/位" : ""}
+                      </span>
+                    ) : null}
+                  </h4>
+                  <p className="text-sm text-gray-300 mt-1">{item.desc}</p>
+                  {item.ingredients ? (
+                    <p className="text-xs text-gray-500 mt-1">
+                      食材：{item.ingredients}
+                    </p>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+
+      {/* 结构化数据：包房信息（供AI抓取） */}
+      <section
+        className="w-full max-w-4xl mx-auto px-6 py-8 text-left"
+        aria-label="岽渔包房信息"
+      >
+        <h2 className="text-2xl font-bold text-accent mb-6 font-serif">
+          包房信息
+        </h2>
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {ROOMS.map((r) => (
+            <li
+              key={r.name}
+              className="text-sm text-gray-300 border border-gray-700/40 rounded px-3 py-2"
+            >
+              <span className="text-accent font-serif">{r.name}</span>
+              <span className="text-gray-500 ml-2">
+                {r.min}-{r.max}人
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

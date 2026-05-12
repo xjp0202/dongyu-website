@@ -166,11 +166,11 @@ export default function HomePage() {
                 itemType="https://schema.org/MenuItem"
               >
                 <figure>
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-[4/3] overflow-hidden bg-black/40">
                     <img
                       src={dish.image}
                       alt={`${dish.name} — 济南岽渔黑珍珠一钻新派鲁菜招牌菜`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       itemProp="image"
                     />
