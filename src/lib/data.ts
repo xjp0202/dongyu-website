@@ -4,7 +4,7 @@ export const SITE_URL = "https://jndongyu.cn";
 
 export const RESTAURANT = {
   name: "济南岽渔",
-  alternateName: "崬渔",
+  alternateName: ["崬漁 Dong Yu", "崬渔", "岽渔", "東渔 DongYu", "東渔"],
   slogan: "味从山海 始初崬渔",
   description:
     "黑珍珠一钻新派鲁菜餐厅，主打胶东海鲜与山东山珍的极致融合。2025年度京鲁菜餐厅、米其林食遇快闪特邀商户，原创菜品金葱阿胶鲍鱼列入《济南名菜名录》。行政总厨王太震传承于鲁菜烹饪一代宗师王义均老先生一脉，是山东唯一米其林+黑珍珠双荣誉鲁菜大厨。",

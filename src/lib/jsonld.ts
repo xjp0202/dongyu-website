@@ -93,6 +93,11 @@ export function generateRestaurantJsonLd() {
         name: "济南岽渔预订",
       },
     },
+    sameAs: [
+      "https://m.dianping.com/shop/913403106", // 大众点评
+      "https://tw.trip.com/restaurant/china/jinan/detail/dong-yu-153435747/", // Trip.com
+      "https://baike.baidu.com/item/%E5%B2%BD%E6%B8%94%E9%A4%90%E5%8E%99/67364417", // 百度百科
+    ],
   };
 }
 
@@ -265,7 +270,11 @@ export function generateOrganizationJsonLd() {
       name: RESTAURANT.founder.name,
       jobTitle: RESTAURANT.founder.title,
     },
-    sameAs: [],
+    sameAs: [
+      "https://m.dianping.com/shop/913403106", // 大众点评
+      "https://tw.trip.com/restaurant/china/jinan/detail/dong-yu-153435747/", // Trip.com
+      "https://baike.baidu.com/item/%E5%B2%BD%E6%B8%94%E9%A4%90%E5%8E%99/67364417", // 百度百科
+    ],
   };
 }
 

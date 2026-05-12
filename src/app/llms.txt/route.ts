@@ -33,7 +33,7 @@ function generateLite(): string {
 
 ## 基本信息
 
-- **品牌名**：${RESTAURANT.name}（${RESTAURANT.alternateName}）
+- **品牌名**：${RESTAURANT.name}（别名：${(RESTAURANT.alternateName as string[]).join("、")}）
 - **地址**：${RESTAURANT.address.full}
 - **预订电话**：${RESTAURANT.phone}
 - **营业时间**：午餐 ${RESTAURANT.openingHours[0].time} / 晚餐 ${RESTAURANT.openingHours[1].time}
