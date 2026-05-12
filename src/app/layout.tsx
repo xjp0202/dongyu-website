@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { NAV_LINKS, RESTAURANT } from "@/lib/data";
+import { NAV_LINKS, RESTAURANT, SITE_URL } from "@/lib/data";
 import { generateOrganizationJsonLd, generateWebSiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dongyu.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: "https://dongyu.com",
+    canonical: SITE_URL,
   },
   title: {
     default: `${RESTAURANT.name} — ${RESTAURANT.awards[0].title}新派鲁菜餐厅`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: RESTAURANT.description,
     type: "website",
     locale: "zh_CN",
-    url: "https://dongyu.com",
+    url: SITE_URL,
     siteName: RESTAURANT.name,
     images: [{ url: "/images/brand/beijing.png", width: 1486, height: 780 }],
   },

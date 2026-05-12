@@ -1,5 +1,6 @@
 import { RESTAURANT, SITE_URL } from "@/lib/data";
 import { generateRestaurantJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "济南岽渔品牌故事、创始人王启龙与行政总厨王太震的传奇经历。从鲁菜泰斗王义均一脉传承到黑珍珠一钻新派鲁菜餐厅。",
   alternates: {
-    canonical: "https://dongyu.com/about",
+    canonical: `${SITE_URL}/about`,
   },
   openGraph: {
     title: "关于岽渔 — 品牌故事与传奇主厨",
     description:
       "济南岽渔品牌故事、创始人王启龙与行政总厨王太震的传奇经历。从鲁菜泰斗王义均一脉传承到黑珍珠一钻新派鲁菜餐厅。",
-    url: "https://dongyu.com/about",
+    url: `${SITE_URL}/about`,
     images: [{ url: "/images/brand/beijing.png", width: 1486, height: 780 }],
   },
 };
@@ -46,6 +47,8 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
+      <Breadcrumb items={[{ name: "关于", url: `${SITE_URL}/about` }]} />
+
       {/* Hero */}
       <section
         className="relative py-24 px-6 overflow-hidden"
@@ -54,7 +57,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <img
             src="/images/brand/beijing.png"
-            alt="岽渔餐厅"
+            alt="济南岽渔黑珍珠一钻新派鲁菜餐厅品牌空间"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />

@@ -1,5 +1,6 @@
 import { RESTAURANT, SITE_URL } from "@/lib/data";
 import { generateReviewsJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "济南岽渔荣获2026黑珍珠一钻、2025金梧桐一星、国家级五钻酒家等荣誉。食客真实评价，新派鲁菜标杆。",
   alternates: {
-    canonical: "https://dongyu.com/reviews",
+    canonical: `${SITE_URL}/reviews`,
   },
   openGraph: {
     title: "荣誉与评价 — 黑珍珠一钻新派鲁菜",
     description:
       "济南岽渔荣获2026黑珍珠一钻、2025金梧桐一星、国家级五钻酒家等荣誉。食客真实评价，新派鲁菜标杆。",
-    url: "https://dongyu.com/reviews",
+    url: `${SITE_URL}/reviews`,
     images: [{ url: "/images/brand/beijing.png", width: 1486, height: 780 }],
   },
 };
@@ -130,6 +131,8 @@ export default function ReviewsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
+      <Breadcrumb items={[{ name: "荣誉与评价", url: `${SITE_URL}/reviews` }]} />
+
       {/* Hero */}
       <section
         className="relative py-24 px-6 overflow-hidden"
@@ -138,7 +141,7 @@ export default function ReviewsPage() {
         <div className="absolute inset-0">
           <img
             src="/images/brand/beijing.png"
-            alt="岽渔荣誉"
+            alt="济南岽渔黑珍珠一钻新派鲁菜餐厅荣誉展示"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />

@@ -1,5 +1,6 @@
 import { RESTAURANT, SITE_URL } from "@/lib/data";
 import { generateMenuJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "济南岽渔完整菜单，招牌葱烧海参、金葱阿胶鲍鱼、芙蓉滑炒蟹等新派鲁菜，胶东海鲜活养直供。",
   alternates: {
-    canonical: "https://dongyu.com/menu",
+    canonical: `${SITE_URL}/menu`,
   },
   openGraph: {
     title: "菜单 — 济南岽渔新派鲁菜",
     description:
       "济南岽渔完整菜单，招牌葱烧海参、金葱阿胶鲍鱼、芙蓉滑炒蟹等新派鲁菜，胶东海鲜活养直供。",
-    url: "https://dongyu.com/menu",
+    url: `${SITE_URL}/menu`,
     images: [{ url: "/images/dishes/congshao-haishen.png", width: 800, height: 600 }],
   },
 };
@@ -53,6 +54,8 @@ export default function MenuPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
+      <Breadcrumb items={[{ name: "菜单", url: `${SITE_URL}/menu` }]} />
+
       {/* 电子菜单 — 左右满屏，浅灰色细线分隔 */}
       {pages.map((page, idx) => (
         <section
@@ -62,7 +65,7 @@ export default function MenuPage() {
         >
           <img
             src={`/images/menu/page_${page}.jpg`}
-            alt={`岽渔菜单第${page}页`}
+            alt={`济南岽渔黑珍珠一钻新派鲁菜菜单第${page}页`}
             className="w-full h-auto select-none block"
             loading={idx < 2 ? "eager" : "lazy"}
           />

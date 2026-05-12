@@ -1,5 +1,6 @@
 import { RESTAURANT, FAQ_ITEMS, SITE_URL } from "@/lib/data";
 import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "济南岽渔常见问题：济南高端鲁菜哪家好？商务宴请推荐？黑珍珠餐厅？高端海鲜？纪念日餐厅？人均消费？预订方式？一站解答。",
   alternates: {
-    canonical: "https://dongyu.com/faq",
+    canonical: `${SITE_URL}/faq`,
   },
   openGraph: {
     title: "常见问题 — 济南岽渔黑珍珠一钻新派鲁菜",
     description:
       "济南岽渔常见问题：济南高端鲁菜哪家好？商务宴请推荐？黑珍珠餐厅？高端海鲜？纪念日餐厅？人均消费？预订方式？",
-    url: "https://dongyu.com/faq",
+    url: `${SITE_URL}/faq`,
     images: [{ url: "/images/brand/beijing.png", width: 1486, height: 780 }],
   },
 };
@@ -84,6 +85,8 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
+      <Breadcrumb items={[{ name: "常见问题", url: `${SITE_URL}/faq` }]} />
+
       {/* Hero */}
       <section
         className="relative py-24 px-6 overflow-hidden"
@@ -92,7 +95,7 @@ export default function FaqPage() {
         <div className="absolute inset-0">
           <img
             src="/images/brand/beijing.png"
-            alt="岽渔餐厅"
+            alt="济南岽渔黑珍珠一钻新派鲁菜餐厅常见问题"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />

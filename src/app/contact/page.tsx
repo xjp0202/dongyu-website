@@ -1,5 +1,6 @@
 import { RESTAURANT, ROOMS, SITE_URL } from "@/lib/data";
 import { generateRestaurantJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "济南岽渔餐厅地址、电话、包房预订、停车指引。位于济南CBD平安金融中心悦坊商场4层，电话0531-88902988。",
   alternates: {
-    canonical: "https://dongyu.com/contact",
+    canonical: `${SITE_URL}/contact`,
   },
   openGraph: {
     title: "联系与预订 — 济南岽渔",
     description:
       "济南岽渔餐厅地址、电话、包房预订、停车指引。位于济南CBD平安金融中心悦坊商场4层，电话0531-88902988。",
-    url: "https://dongyu.com/contact",
+    url: `${SITE_URL}/contact`,
     images: [{ url: "/images/space/hall.png", width: 800, height: 600 }],
   },
 };
@@ -45,6 +46,8 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
+      <Breadcrumb items={[{ name: "联系与预订", url: `${SITE_URL}/contact` }]} />
+
       {/* Hero */}
       <section
         className="relative py-24 px-6 overflow-hidden"
@@ -53,7 +56,7 @@ export default function ContactPage() {
         <div className="absolute inset-0">
           <img
             src="/images/brand/beijing.png"
-            alt="岽渔餐厅"
+            alt="济南岽渔黑珍珠一钻新派鲁菜餐厅"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />
@@ -118,17 +121,17 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-accent text-sm mb-1 tracking-widest">
-                    在线预订
+                    电话预订
                   </h3>
                   <p className="text-text-muted text-sm mb-3">
-                    关注微信公众号「济南岽渔」或美团搜索「岽渔」在线预订
+                    请拨打预订电话，我们的侍酒师将为您安排座位
                   </p>
                   <div className="flex gap-3">
                     <a
                       href={`tel:${RESTAURANT.phone}`}
                       className="px-6 py-2.5 bg-accent text-primary text-sm hover:bg-accent-light transition-colors"
                     >
-                      电话预订
+                      电话预订 {RESTAURANT.phone}
                     </a>
                   </div>
                 </div>
@@ -143,7 +146,7 @@ export default function ContactPage() {
               <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border">
                 <img
                   src="/images/space/hall.png"
-                  alt="岽渔大厅空间"
+                  alt="济南岽渔黑珍珠一钻新派鲁菜餐厅大厅空间"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
