@@ -53,25 +53,28 @@ const MENU_SECTIONS = [
   {
     name: "招牌·硬菜",
     items: [
-      { name: "金葱阿胶鲍鱼", price: 288, desc: "选用南非6头鲍，配以东阿阿胶与金葱慢炖" },
-      { name: "葱烧海参（位上）", price: 188, desc: "辽刺参配章丘大葱，鲁菜经典再诠释" },
-      { name: "九转大肠", price: 168, desc: "传统鲁菜技艺，酸甜苦辣咸五味交融" },
+      { name: "金葱阿胶鲍鱼", price: 288, desc: "选用南非6头鲍，配以东阿阿胶与章丘金葱慢炖48小时。鲍鱼肥厚软糯，胶香与葱香完美交融。列入《济南名菜名录》（T/JNFX002-2023）。", ingredients: "南非6头鲍、东阿阿胶、章丘金葱、老抽、冰糖", method: "慢炖48小时" },
+      { name: "葱烧海参（位上）", price: 188, desc: "辽参配章丘大葱，鲁菜经典再诠释。海参Q弹，葱香浓郁，酱汁浓郁挂汁。", ingredients: "辽刺参、章丘大葱、高汤", method: "葱烧、收汁" },
+      { name: "九转大肠", price: 168, desc: "传统鲁菜技艺，酸甜苦辣咸五味交融。外焦里嫩，酱汁浓郁。", ingredients: "猪大肠、醋、糖、砂仁、豆蔻", method: "炸、烧、收汁" },
+      { name: "葱烧蹄筋", price: 0, desc: "牛蹄筋配金葱慢炖，胶质丰富，软糯弹牙。", ingredients: "牛蹄筋、章丘大葱、高汤", method: "慢炖" },
     ],
   },
   {
     name: "胶东·海鲜",
     items: [
-      { name: "清蒸黄花鱼", price: 0, desc: "当日威海渔港直送，清蒸保留本味" },
-      { name: "蒜蓉粉丝蒸扇贝", price: 0, desc: "大连獐子岛扇贝，蒜蓉提鲜" },
-      { name: "鲅鱼水饺", price: 88, desc: "胶东手作水饺，鲜嫩多汁" },
+      { name: "清蒸黄花鱼", price: 0, desc: "当日威海渔港直送，清蒸保留本味。鱼肉细嫩，汤汁清甜。", ingredients: "威海黄花鱼、姜片、料酒", method: "清蒸", source: "威海渔港直送，海水活养" },
+      { name: "蒜蓉粉丝蒸扇贝", price: 0, desc: "大连獐子岛扇贝，蒜蓉提鲜。扇贝肥美，粉丝吸满海鲜汤汁。", ingredients: "大连扇贝、蒜蓉、粉丝", method: "蒸", source: "大连獐子岛，海水活养" },
+      { name: "鲅鱼水饺", price: 88, desc: "胶东手作水饺，鲅鱼肉馅鲜嫩多汁，配海米韭菜提鲜。", ingredients: "鲅鱼肉、海米、韭菜、面粉", method: "手工包制" },
+      { name: "海肠炒韭菜", price: 0, desc: "拇指海肠配头刀韭菜，火候精准。海肠脆嫩，韭菜清香。", ingredients: "拇指海肠、头刀韭菜", method: "爆炒", source: "威海渔港直送，海水活养" },
     ],
   },
   {
     name: "鲁味·传承",
     items: [
-      { name: "糖醋鲤鱼", price: 128, desc: "黄河鲤鱼，经典糖醋制法" },
-      { name: "油爆双脆", price: 158, desc: "鸡胗与猪肚，火候见真章" },
-      { name: "一品锅", price: 0, desc: "佛跳墙式鲁菜大盆菜，按位供应" },
+      { name: "糖醋鲤鱼", price: 128, desc: "黄河鲤鱼，经典糖醋制法。鲤鱼炸至外酥里嫩，糖醋汁酸甜适中。", ingredients: "黄河鲤鱼、醋、糖、酱油", method: "炸、溜" },
+      { name: "油爆双脆", price: 158, desc: "鸡胗与猪肚，火候见真章。双脆爽口，镬气十足。", ingredients: "鸡胗、猪肚、笋片", method: "油爆" },
+      { name: "一品锅", price: 0, desc: "佛跳墙式鲁菜大盆菜，按位供应。鲍鱼、海参、花胶、瑶柱等名贵食材慢炖。", ingredients: "鲍鱼、海参、花胶、瑶柱、老母鸡高汤", method: "慢炖4小时" },
+      { name: "砂锅海胆豆腐", price: 0, desc: "海胆配手作豆腐，砂锅慢炖。豆腐吸满海胆鲜味，口感丝滑。", ingredients: "海胆、手作豆腐、高汤", method: "砂锅慢炖" },
     ],
   },
 ];
@@ -96,8 +99,11 @@ const menuText = MENU_SECTIONS.map((section) => {
   const items = section.items
     .map((item) => {
       let line = `- **${item.name}**`;
-      if (item.price) line += ` ¥${item.price}/位`;
+      if (item.price && item.price > 0) line += ` ¥${item.price}/位`;
       line += `：${item.desc}`;
+      if (item.ingredients) line += `\n  - 食材：${item.ingredients}`;
+      if (item.method) line += `\n  - 烹饪：${item.method}`;
+      if (item.source) line += `\n  - 来源：${item.source}`;
       return line;
     })
     .join("\n");

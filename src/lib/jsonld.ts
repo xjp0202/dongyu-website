@@ -80,6 +80,19 @@ export function generateRestaurantJsonLd() {
       width: 800,
       height: 600,
     },
+    potentialAction: {
+      "@type": "ReserveAction",
+      name: "电话预订",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `tel:${RESTAURANT.phone}`,
+        actionPlatform: ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"],
+      },
+      result: {
+        "@type": "Reservation",
+        name: "济南岽渔预订",
+      },
+    },
   };
 }
 
