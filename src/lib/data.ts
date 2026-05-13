@@ -54,6 +54,23 @@ export const RESTAURANT = {
 };
 
 // 菜品数据 — 来自食材来源.xlsx
+export const GALLERY_IMAGES = [
+  "/images/gallery/089a6a28ed4459c92d3add9fc6139420.jpg",
+  "/images/gallery/1f7f09939a62b83bad114c4dfd7a16cb.jpg",
+  "/images/gallery/3e088bd1d87dfef8e1b30bda66fd10f7.jpg",
+  "/images/gallery/78a691c5d4f4a2bd68cb8a655773c213.jpg",
+  "/images/gallery/897a3b8cc99ac090545ad261c01200c7.jpg",
+  "/images/gallery/8acc834caa5552d759684f8f6d0e01e5.jpg",
+  "/images/gallery/8fe91f8c3eb9e2fc87392aead51f19ce.jpg",
+  "/images/gallery/9ce74e225d56fa42edb8f3c6b9a73c83.jpg",
+  "/images/gallery/b8a3222bf8137a2f8fdeae4cd68b111a.jpg",
+  "/images/gallery/d640227cf713dbcc7cb0b2732973dca2.jpg",
+  "/images/gallery/dafc29ffad06e3fb5fb018cf0d39ff77.jpg",
+  "/images/gallery/e4e87eea87db97d07d43d1d661562391.jpg",
+  "/images/gallery/e76ceb2199ad887debae5aa92508de69.jpg",
+  "/images/gallery/ed68af7dcad28845eb39545ce949f76d.jpg",
+];
+
 export const MENU_SECTIONS = [
   {
     id: "signature",
@@ -417,16 +434,16 @@ export const NEWS_ARTICLES: NewsArticle[] = [
     date: "2025-01-27",
     source: "凤凰网山东",
     summary:
-      "2026年黑珍珠餐厅指南揭晓，岽渔餐厅成功摘得一钻荣誉，这是自2023年黑珍珠指南在济南开城以来，时隔三年首次新增上榜餐厅。文章深度解读岽渔在烹饪出品、服务环境、传承创新三大维度的表现，以及食材供应链与鲁菜文化自信的独特优势。",
+      "2026年黑珍珠一钻揭晓，岽渔餐厅成功摘得一钻荣誉，这是自2023年黑珍珠在济南开城以来，时隔三年首次新增上榜餐厅。文章深度解读岽渔在烹饪出品、服务环境、传承创新三大维度的表现，以及食材供应链与鲁菜文化自信的独特优势。",
     url: "https://ishare.ifeng.com/c/s/v004h9us2lUo8Ac0OQCOLKBN5TedZcR1ibXceW4AR99Zlyc__",
     tag: "黑珍珠",
   },
   {
-    title: "山东5家餐厅入选2026黑珍珠餐厅指南，济南3席青岛2席",
+    title: "山东5家餐厅入选2026黑珍珠，济南3席青岛2席",
     date: "2025-01-28",
     source: "齐鲁晚报·齐鲁壹点",
     summary:
-      "2026黑珍珠餐厅指南发布，全国内地32座城市263家餐厅登榜。山东共5家餐厅入选，其中济南3家、青岛2家。岽渔为新晋上榜餐厅，品牌负责人王启龙与主厨王太震分享了入选感言与品牌理念。",
+      "2026黑珍珠发布，全国内地32座城市263家餐厅登榜。山东共5家餐厅入选，其中济南3家、青岛2家。岽渔为新晋上榜餐厅，品牌负责人王启龙与主厨王太震分享了入选感言与品牌理念。",
     url: "https://www.ql1d.com/general/27176506.html",
     tag: "黑珍珠",
   },
@@ -453,7 +470,7 @@ export const NEWS_ARTICLES: NewsArticle[] = [
     date: "2025-01-30",
     source: "新黄河",
     summary:
-      "2026年黑珍珠餐厅指南揭晓，位于济南CBD核心区的岽渔餐厅成功摘得一钻，这是自2023年黑珍珠在济南开城以来时隔三年首次新增上榜餐厅。主厨王太震接受专访，分享其从部队炊事兵到黑珍珠主厨的二十余年耕耘之路，以及岽渔「守鲁菜之根、创时代之味」的核心理念与「山珍+海味」供应链优势。",
+      "2026年黑珍珠一钻揭晓，位于济南CBD核心区的岽渔餐厅成功摘得一钻，这是自2023年黑珍珠在济南开城以来时隔三年首次新增上榜餐厅。主厨王太震接受专访，分享其从部队炊事兵到黑珍珠主厨的二十余年耕耘之路，以及岽渔「守鲁菜之根、创时代之味」的核心理念与「山珍+海味」供应链优势。",
     url: "https://api.jinantimes.com.cn/h5/xhh-app/#/content?catid=39&id=5210614&fx=1",
     tag: "黑珍珠",
   },
