@@ -1,4 +1,4 @@
-import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS } from "@/lib/data";
+import { RESTAURANT, SITE_URL, MENU_SECTIONS, TEA_ITEMS, FAQ_ITEMS, ROOMS } from "@/lib/data";
 import { generateMenuJsonLd, generateBreadcrumbJsonLd, generateWebPageJsonLd } from "@/lib/jsonld";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Metadata } from "next";
@@ -108,6 +108,41 @@ export default function MenuPage() {
             </ul>
           </div>
         ))}
+      </section>
+
+      {/* 茶水板块 */}
+      <section
+        className="w-full max-w-4xl mx-auto px-6 py-8 text-left"
+        aria-label="岽渔茶水"
+      >
+        <h2 className="text-2xl font-bold text-accent mb-6 font-serif">
+          茶水
+        </h2>
+        <ul className="space-y-5">
+          {TEA_ITEMS.map((tea) => (
+            <li key={tea.name} className="border-b border-gray-700/40 pb-4">
+              <h4 className="text-lg font-serif text-white">
+                {tea.name}
+                {tea.priceCup ? (
+                  <span className="text-accent ml-2 text-base">
+                    ¥{tea.priceCup}/杯
+                  </span>
+                ) : null}
+                {tea.pricePot ? (
+                  <span className="text-accent ml-2 text-base">
+                    ¥{tea.pricePot}/壶
+                  </span>
+                ) : null}
+              </h4>
+              <p className="text-sm text-gray-300 mt-1">{tea.desc}</p>
+              {tea.ingredients ? (
+                <p className="text-xs text-gray-500 mt-1">
+                  食材：{tea.ingredients}
+                </p>
+              ) : null}
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* 结构化数据：包房信息（供AI抓取） */}
