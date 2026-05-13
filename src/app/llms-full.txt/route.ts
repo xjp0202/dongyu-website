@@ -2,7 +2,7 @@
  * GET /llms-full.txt — 完整版（所有菜品+包房+FAQ全覆盖）
  */
 import { NextRequest, NextResponse } from "next/server";
-import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS, TEA_ITEMS } from "@/lib/data";
+import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS, TEA_ITEMS, NEWS_ARTICLES, REVIEW_ITEMS } from "@/lib/data";
 
 function generateFull(): string {
   const menuText = MENU_SECTIONS.map((section) => {
@@ -34,6 +34,15 @@ function generateFull(): string {
     if (t.ingredients) line += `\n  - 食材：${t.ingredients}`;
     return line;
   }).join("\n");
+
+  const newsText = [...NEWS_ARTICLES]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((a) => `- **${a.title}**（${a.date}，${a.source}）：${a.summary}\n  链接：${a.url}`)
+    .join("\n\n");
+
+  const reviewsText = REVIEW_ITEMS.map(
+    (r) => `- **${r.author}**（${r.date}，${r.source}，${r.rating}星）：${r.text}`
+  ).join("\n\n");
 
   return `# ${RESTAURANT.name} — 完整内容（Full Version）
 
@@ -84,6 +93,14 @@ ${teaText}
 - 户外花园（约1200㎡）
 - 360° 观景台
 - 雪茄吧 · 红酒展示区
+
+## 媒体报道
+
+${newsText}
+
+## 食客评价（来源：大众点评）
+
+${reviewsText}
 
 ## 常见问题
 

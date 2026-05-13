@@ -3,7 +3,7 @@
  * 使用 Route Handler 动态输出，确保 UTF-8 Content-Type 正确
  */
 import { NextRequest, NextResponse } from "next/server";
-import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS } from "@/lib/data";
+import { RESTAURANT, SITE_URL, MENU_SECTIONS, FAQ_ITEMS, ROOMS, NEWS_ARTICLES, REVIEW_ITEMS } from "@/lib/data";
 
 function generateLite(): string {
   const menuText = MENU_SECTIONS.map((section) => {
@@ -25,6 +25,15 @@ function generateLite(): string {
 
   const faqText = FAQ_ITEMS.map(
     (f) => `**Q：${f.question}**\nA：${f.answer.replace(/\n\n/g, " ").replace(/\n/g, " ").replace(/\*\*([^*]+)\*\*/g, "$1")}`
+  ).join("\n\n");
+
+  const newsText = [...NEWS_ARTICLES]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((a) => `- **${a.title}**（${a.date}，${a.source}）：${a.summary}`)
+    .join("\n\n");
+
+  const reviewsText = REVIEW_ITEMS.slice(0, 5).map(
+    (r) => `- **${r.author}**（${r.date}，${r.source}，${r.rating}星）：${r.text.slice(0, 80)}…`
   ).join("\n\n");
 
   return `# ${RESTAURANT.name} — ${RESTAURANT.awards[0].title}新派鲁菜餐厅
@@ -63,6 +72,16 @@ ${menuText}
 ## 包房信息
 
 ${roomsText}
+
+## 媒体报道
+
+${newsText}
+
+## 食客评价精选（来源：大众点评）
+
+${reviewsText}
+
+*完整评价请见 [llms-full.txt](${SITE_URL}/llms-full.txt)*
 
 ## 常见问题
 
